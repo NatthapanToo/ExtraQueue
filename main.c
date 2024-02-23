@@ -12,7 +12,7 @@ int main(int argc , char **argv) {
   q. headPtr=NULL;
   q.tailPtr=NULL;
   q.size=0;
-  int i,x;
+  int i,x,j=1;
   int order_quantity;
   int order_num;
  for(i=1;i<argc;i++){
@@ -28,11 +28,14 @@ int main(int argc , char **argv) {
     }
     else{
         if(q.size!=0) {
+            printf("Customer no: %d\n",j);
             dequeue_struct(&q);
-            
+            j++;
+
         }else printf("the queue is empty\n");
     }
  }
- //printf("%d",q.size);
-  return 0;
+ printf("============================================\n");
+ printf(" There are %d ppl left in the queue",q.size);
+ return 0;
 }

@@ -34,7 +34,6 @@ void dequeue_struct(Queue *q){
    q->headPtr=q->headPtr->nextPtr;
    free(t);
    if(q->size==0) q->tailPtr=NULL;
-   printf("Customer no: %d\n",value);
    switch(value){
     case 1 : 
         printf("Ramen\n");
