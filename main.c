@@ -36,6 +36,6 @@ int main(int argc , char **argv) {
     }
  }
  printf("============================================\n");
- printf(" There are %d ppl left in the queue",q.size);
+ printf(" There are %d ppl left in the queue",q.size);//hii
  return 0;
 }
