@@ -63,7 +63,7 @@ void dequeue_struct(Queue *q){
     q->size--;
    //return value;
    }
-   //return 0;
+   //return 0; hi
 }
 #endif
 
